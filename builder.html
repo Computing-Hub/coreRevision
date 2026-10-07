@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Make a link – Quick Explainers</title>
+  <meta name="description" content="Teachers: choose topics and settings, then share a link or print a worksheet.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="builder">
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="school">Le Rocquier School</span> Quick Explainers <span class="beta">Beta</span></a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="maths.html">Maths</a>
+        <a href="english.html">English</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" id="builderApp">
+    <section class="page-hero">
+      <h1>Make a link</h1>
+      <p>Tick the topics a student or group needs, and any support settings. Send the link, or print the worksheet. Nothing about the student goes in the link, and nothing is saved.</p>
+    </section>
+
+    <div class="builder-grid">
+      <div>
+        <h2>1. Topics</h2>
+        <div id="topicLists"><p class="loading">Loading topics…</p></div>
+      </div>
+      <div class="builder-side">
+        <h2>2. In this order</h2>
+        <ol class="order" id="order"></ol>
+        <p><button class="btn" type="button" id="clearAll">Clear all</button></p>
+
+        <h2>3. Support settings</h2>
+        <div id="settingsBox" class="settings-body"></div>
+
+        <div id="output" hidden>
+          <h2>4. Share</h2>
+          <label class="out-label" for="studentLink">Student link</label>
+          <div class="out-row"><input id="studentLink" readonly><button class="btn" type="button" id="copyStudent">Copy</button><a class="btn" id="openStudent" target="_blank" rel="noopener">Open</a></div>
+          <label class="out-label" for="sheetLink">Printable worksheet</label>
+          <div class="out-row"><input id="sheetLink" readonly><button class="btn" type="button" id="copySheet">Copy</button><a class="btn" id="openSheet" target="_blank" rel="noopener">Open</a></div>
+          <details class="qr-box"><summary>Show a QR code for the board</summary><div id="qr"></div></details>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">&copy; <span id="year">2026</span> Dr Galan. Quick Explainers, beta version for classroom testing. <a href="index.html">Back to home</a></div>
+  </footer>
+
+  <script src="js/vendor/qrcode.js"></script>
+  <script src="js/support.js"></script>
+  <script src="js/topics.js"></script>
+  <script src="js/builder.js"></script>
+</body>
+</html>

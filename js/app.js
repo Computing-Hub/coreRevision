@@ -43,3 +43,21 @@
     });
   });
 })();
+
+// Settings from the link (?font=readable&audio=on&speed=0.75) and a printable worksheet per topic.
+(function () {
+  if (!window.QE) return;
+  QE.enhance(document);
+  var extra = QE.toParams(QE.state);
+  document.querySelectorAll('details.topic').forEach(function (topic) {
+    var practice = topic.querySelector('.practice');
+    if (!practice) return;
+    var p = document.createElement('p');
+    p.className = 'print-topic';
+    var a = document.createElement('a');
+    a.href = 'pathway.html?' + ['topics=' + topic.id].concat(extra).concat(['print=1']).join('&');
+    a.textContent = 'Printable worksheet for this topic';
+    p.appendChild(a);
+    practice.appendChild(p);
+  });
+})();

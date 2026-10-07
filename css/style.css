@@ -393,3 +393,9 @@ html.chunk-small .sheet-ans > li:nth-child(n+4) { display: none; }
   .remember { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   html.font-readable body { font-size: 13pt; }
 }
+
+/* ---------- Read aloud: the line being read, and the word being said ---------- */
+.reading { background: var(--remember); border-radius: 6px; box-shadow: 0 0 0 6px var(--remember); }
+.remember.reading { box-shadow: 0 0 0 3px #e0b400; }
+::highlight(qe-word) { background-color: #1f2430; color: #fff; }
+@media print { .reading { background: none; box-shadow: none; } }

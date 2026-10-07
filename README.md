@@ -50,7 +50,7 @@ pathway.html?topics=hcf,lcm,peel&print=1                               printable
 | `font=readable` | Bigger text, more spacing, plain background |
 | `motion=reduce` | Nothing moves on the page |
 | `chunk=small` | Only the first 3 questions (and answers) per topic |
-| `audio=on` | "Read aloud" buttons for the explanation and the questions, using the best British voice on the device |
+| `audio=on` | "Read aloud" buttons for the explanation and the questions, using the best British voice on the device. The line being read is shaded and each word is highlighted as it is said |
 | `speed=0.75` or `1.25` | Video playback speed |
 | `print=1` | Worksheet: explanation, a QR code per video, questions with space to write, answers on a separate page |
 

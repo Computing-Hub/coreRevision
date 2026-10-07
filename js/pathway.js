@@ -30,7 +30,7 @@
     main.innerHTML =
       '<section class="page-hero"><h1>No topics in this link</h1>' +
       '<p>Ask your teacher for your link, or choose a subject: <a href="maths.html">Maths</a> or <a href="english.html">English</a>.</p></section>' +
-      '<p>Teachers: <a href="builder.html">make a link for a student or group</a>.</p>';
+      '<p>Teachers: <a href="index.html">make a link for a student or group</a>.</p>';
   }
 
   // ---------- on screen ----------

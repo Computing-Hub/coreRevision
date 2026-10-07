@@ -55,7 +55,7 @@
     $('sheetLink').value = sheet; $('openSheet').href = sheet;
     var qr = qrcode(0, 'M'); qr.addData(student); qr.make();
     $('qr').innerHTML = qr.createSvgTag({ cellSize: 6, margin: 2, scalable: true, alt: 'QR code for the student link', title: 'QR code for the student link' });
-    try { history.replaceState(null, '', 'builder.html?' + ['topics=' + picked.join(',')].concat(QE.toParams(QE.state)).join('&')); } catch (e) {}
+    try { history.replaceState(null, '', 'index.html?' + ['topics=' + picked.join(',')].concat(QE.toParams(QE.state)).join('&')); } catch (e) {}
   }
 
   function copy(inputId, btn) {

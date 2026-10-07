@@ -5,10 +5,10 @@ Each topic has a short explanation, the video, practice questions and hidden ans
 
 ## Pages
 
-- `index.html` – introduction for students and teachers
+- `index.html` – home page: teachers tick topics and support settings, then copy a student link, a worksheet link or a QR code
+- `about.html` – introduction for students and teachers
 - `maths.html` – 11 Maths topics
 - `english.html` – 6 English topics
-- `builder.html` – teachers tick topics and support settings, then copy a student link, a worksheet link or a QR code
 - `pathway.html` – shows the topics in a link, in order, with the videos
 - `allVideos/` – the `.mp4` videos and their `.vtt` captions (linked with relative paths)
 
@@ -37,7 +37,7 @@ then visit http://localhost:8000.
 
 ## Links for a student or group
 
-Topics are still written once, in `maths.html` and `english.html`. `pathway.html` reads them from those pages, so a new topic block appears in the builder automatically.
+Topics are still written once, in `maths.html` and `english.html`. `pathway.html` reads them from those pages, so a new topic block appears on the home page automatically.
 
 ```
 pathway.html?topics=hcf,lcm,peel&font=readable&audio=on&speed=0.75     on screen
